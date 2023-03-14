@@ -5,18 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doenças </title>
+    <link rel="stylesheet" href="style5.css">   
 </head>
 <body>
-    <h1>Doenças</h1>
 
-    <!-- Tag ul para estruturação de lista não ordenada -->
-    <ul>
-        <!-- Tag li para elementos da lista -->
-        <li><a href="index.html">Introdução </a></li>
-        <li><a href="index2.html">Formulário </a></li>
-        <li><a href="index3.html">Tabelas</a></li>
-        <li><a href="index4.html">Imagens</a></li>
-    </ul>
+    <header>
+        <!-- Nav representa uma seção de uma página que aponta para outras páginas -->
+        <div class="titulo">
+            <img src="escudo_virus.webp" alt="logo" id="logo">
+            <h2 class="Doenças">Doenças</h2>
+        </div>
+        <nav class="nav" style="display: flex; justify-content: center;">
+            <div>
+                <a href="index.html">Introdução </a>
+                <a href="index2.html">Formulário </a>
+                <a href="index3.html">Tabelas</a>
+                <a href="index4.html">Imagens</a>
+            </div>
+
+                    <!-- Tag para formulario de pesquisa -->
+            <form method="get" action="index5.html">
+                <label for="pesq"><strong>Busque Aqui:</strong></label>
+                <input type="text" name="pesq" id="pesq">
+                <input type="submit" value="Entrar">
+            </form>
+        </nav>
+    </header>
     
     <p>As doenças podem ser classificadas de diversas maneiras, de acordo com suas características e causas. Algumas das principais classificações de doenças são:</p>
     
@@ -29,25 +43,27 @@
         <li>Classificação por incidência</li>
         <li>Classificação por idade</li>
     </ol>
-    <!-- Tag para formulario de pesquisa -->
-    <form method="get" action="index5.html">
-        <label for="pesq"><strong>Busque Aqui:</strong></label>
-        <input type="text" name="pesq" id="pesq">
-        <input type="submit" value="Entrar">
-    </form><br><br>
+    <br><br>
+
+    <div class="contener">
+
+        <section>
+            <h4 align="center">Vírus Gamma</h4> 
 
     <!-- Tag para imagem -->
-    <img src="doencas.jfif" alt="transtornos" />
+            <img src="virus_gamma.png" alt="virus" id="virus"/>
+
+        </section>
 
     <!-- Tag section para delimitação de bloco-->
     <section>
-        <h4>Tabelas sobre Doenças</h4>
+        <h4 align="center">Tabela sobre Doenças</h4>
 
         <!-- Tags table, tr,td para estrutura da tabela -->
-        <table border="2" bgcolor="#caf2be">
+        <table border="2" bgcolor="#caf2be" class="tabelinha">
             <tr>
-                <td> <strong>Nome</strong> </td>
-                <td> <strong>Descrição</strong> </td>
+                <td class="titulo_tabela"> <strong>Nome</strong> </td>
+                <td class="titulo_tabela"> <strong>Descrição</strong> </td>
             </tr>
             <tr>
                 <td>Doenças cardiovasculares</td>
@@ -66,10 +82,9 @@
                 <td>Causadas por mutações no DNA. </td>
             </tr>
         </table>
-
-        
-
     </section>
+    </div>
+ 
        
 
 </body>
