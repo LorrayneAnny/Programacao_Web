@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doenças</title>
+    <title>Doenças </title>
     <link rel="stylesheet" href="style.css">   
+
+    <header>
+      <!-- Nav representa uma seção de uma página que aponta para outras páginas -->
+      <div class="titulo">
+          <img src="escudo_virus.webp" alt="logo" id="logo">
+          <h2 class="Doenças">Doenças</h2>
+      </div>
+      <nav class="nav" style="display: flex; justify-content: center;">
+          <div>
+              <a href="index.html">Introdução </a>
+              <a href="index2.html">Formulário </a>
+              <a href="index3.html">Tabelas</a>
+              <a href="index4.html">Imagens</a>
+          </div>
+
+                  <!-- Tag para formulario de pesquisa -->
+          <form method="get" action="index5.html">
+              <label for="pesq"><strong>Busque Aqui:</strong></label>
+              <input type="text" name="pesq" id="pesq">
+              <input type="submit" value="Entrar">
+          </form>
+      </nav>
+  </header>
+
 </head>
 <body>
      <div class="header"></div>

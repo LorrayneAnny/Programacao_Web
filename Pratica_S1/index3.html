@@ -3,6 +3,31 @@
   <head>
     <meta charset="UTF-8">
     <title>Doenças </title>
+    <link rel="stylesheet" href="style3.css">  
+
+    <header>
+      <!-- Nav representa uma seção de uma página que aponta para outras páginas -->
+      <div class="titulo">
+          <img src="escudo_virus.webp" alt="logo" id="logo">
+          <h2 class="Doenças">Doenças</h2>
+      </div>
+      <nav class="nav" style="display: flex; justify-content: center;">
+          <div>
+              <a href="index.html">Introdução </a>
+              <a href="index2.html">Formulário </a>
+              <a href="index3.html">Tabelas</a>
+              <a href="index4.html">Imagens</a>
+          </div>
+
+                  <!-- Tag para formulario de pesquisa -->
+          <form method="get" action="index5.html">
+              <label for="pesq"><strong>Busque Aqui:</strong></label>
+              <input type="text" name="pesq" id="pesq">
+              <input type="submit" value="Entrar">
+          </form>
+      </nav>
+  </header>
+
     <style>
       /* Estilo para as células da tabela */
       td {
@@ -39,11 +64,14 @@
     <h1 align="center">Doenças</h1>
 
     <!-- Tag table para marcação de tabela -->
-    <table cellspacing="0" cellpadding="0" bgcolor="#b6d4bb">
+    <table cellspacing="0" cellpadding="0" bgcolor="#b6d4bb" class="grupo" align="center">
        <!-- Tag thead para bloco de cabecalho/ tr para lihas/ td para colunas -->
+
+       <section>
       <thead>
+
         <tr>
-            <td colspan="3" align="center"><strong>Transtornos Mentais</strong></td>
+            <td colspan="3"><strong>Transtornos Mentais</strong class="grupo"></td>
         </tr>
         <tr>
           <th>Transtorno Mental</th>
@@ -72,11 +100,11 @@
       </tbody>
     </table>
     
-    <!-- <h2></h2> -->
-    <table cellspacing="10" cellpadding="5" border="3" bgcolor="#f1e7c5">
+    <!-- <h2>Tabela Tipos de Cancêr</h2> -->
+    <table cellspacing="10" cellpadding="5" border="3" bgcolor="#f1e7c5" align="center" >
       <thead>
         <tr>
-            <td colspan="3" align="center"><strong>Tipos de Câncer</strong></td>
+            <td colspan="3" align="center"><strong>Tipos de Câncer</strong class="grupo"></td>
         </tr>
         <tr>
           <th>Câncer</th>
@@ -101,11 +129,11 @@
         </tr>
     </table>
 
-    <!-- <h2>Doenças Contagiosas</h2> -->
-    <table cellspacing="12" cellpadding="5" border="5" bgcolor="#f5938b">
+    <!-- <h2>Tabela Doenças Contagiosas</h2> -->
+    <table cellspacing="12" cellpadding="5" border="5" bgcolor="#f5938b" class="grupo" align="center">
       <thead>
         <tr>
-            <td colspan="3" align="center"><strong>Doenças Contagiosas</strong></td>
+            <td colspan="3" align="center"><strong>Doenças Contagiosas</strong class="grupo"></td>
         </tr>
         <tr>
           <th>Doença Contagiosa</th>

@@ -4,25 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Doenças </title>
+    <link rel="stylesheet" href="style2.css">   
 </head>
 <body>
 
+    <header>
+        <!-- Nav representa uma seção de uma página que aponta para outras páginas -->
+        <div class="titulo">
+            <img src="escudo_virus.webp" alt="logo" id="logo">
+            <h2 class="Doenças">Doenças</h2>
+        </div>
+        <nav class="nav" style="display: flex; justify-content: center;">
+            <div>
+                <a href="index.html">Introdução </a>
+                <a href="index2.html">Formulário </a>
+                <a href="index3.html">Tabelas</a>
+                <a href="index4.html">Imagens</a>
+            </div>
+
+                    <!-- Tag para formulario de pesquisa -->
+            <form method="get" action="index5.html">
+                <label for="pesq"><strong>Busque Aqui:</strong></label>
+                <input type="text" name="pesq" id="pesq">
+                <input type="submit" value="Entrar">
+            </form>
+        </nav>
+    </header>
+
   <!-- Tag para formulario, sendo input para inserção de informações e labels para legendas -->
-    <form>
+  
+  
+    <form class="formu" method="get">
+      
+      <p id="subtitulo">Complete com suas Informações:</p>
+    
+      <div class="campo">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome"><br>
-  
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="campo">
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email"><br>
-  
+        <input type="email" id="email" name="email" required><br>
+      </div>
+
+      <div class="campo">
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha"><br>
-
+      </div>
         
-        <label for="Data">Data de Nascimento</label>
+      <div class="campo">
+        <label for="Data">Data de Nascimento: </label>
         <input type="datetime-local" name="bdaytime" id="Data"><br>
-  
+      </div>
+
+      <div class="campo">
         <label for="sexo">Sexo:</label>
         <!-- Tag select para inlclusão de dados de forma pre definida -->
         <select id="sexo" name="sexo">
@@ -30,14 +67,23 @@
           <option value="feminino">Feminino</option>
           <option value="outro">Outro</option>
         </select><br>
+      </div>
 
-        <label for="Arquivos">Envie seus Documentos</label>
+      <div class="campo">
+        <label for="Arquivos">Envie seus documentos: </label>
         <input type="file" name="arquivos" multiple id="Arquivos"><br>
-
-        <br><label for="termos">Aceito os termos de uso:</label>
+      </div>
+    
+      <div class="campo">
+        <label for="termos">Aceito os termos de uso </label>
         <input type="checkbox" id="termos" name="termos"><br>
-  
-        <button type="submit">Enviar</button>
+      </div>
+
+        <button type="submit" class="botao" >Enviar</button>
+
       </form> 
+      
+    
+
 </body>
 </html>

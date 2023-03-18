@@ -1,4 +1,6 @@
-
+*{
+  padding: 0;
+}
 
 /*Estilização do fundo*/
 body {  
@@ -184,6 +186,7 @@ form{
   justify-content: space-around;
 }
 
+/*Estilos tabela*/
 .tabelinha{
   display: flex;
   flex-wrap: nowrap;
@@ -196,6 +199,32 @@ form{
   height: 70px;
   text-align: center;
 }
+
 .titulo_tabela {
   font-weight: 900;
+}
+
+
+
+.leg-im{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15pc;
+}
+
+
+#cancer{
+  width: 50%;
+  height: 50%;
+}
+
+
+.title-trans{
+   margin-top:0;
+   padding-top: 0;
+}
+
+
+#title-cancer{
+  /* margin-top: 80px; */
 }

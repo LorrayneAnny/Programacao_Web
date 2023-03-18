@@ -1,25 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Imagens Doenças</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doenças </title>
+    <link rel="stylesheet" href="style5.css">   
 </head>
 <body>
+
+    <header>
+        <!-- Nav representa uma seção de uma página que aponta para outras páginas -->
+        <div class="titulo">
+            <img src="escudo_virus.webp" alt="logo" id="logo">
+            <h2 class="Doenças">Doenças</h2>
+        </div>
+        <nav class="nav" style="display: flex; justify-content: center;">
+            <div>
+                <a href="index.html">Introdução </a>
+                <a href="index2.html">Formulário </a>
+                <a href="index3.html">Tabelas</a>
+                <a href="index4.html">Imagens</a>
+            </div>
+
+                    <!-- Tag para formulario de pesquisa -->
+            <form method="get" action="index5.html">
+                <label for="pesq"><strong>Busque Aqui:</strong></label>
+                <input type="text" name="pesq" id="pesq">
+                <input type="submit" value="Entrar">
+            </form>
+        </nav>
+    </header>
+    
+    <div>
 	<h1>Conheça mais sobre Trantornos Mentais e Como Identificar Cancêr de Mama</h1>
 	
-	<p>Trantornos Mentais:</p><br>
+	
 
     <!-- Tag  img para retorno de imagens, com seus repectivos atributos -->
-	<img src="Trantornos Mentais.png" alt="Imagem 1" width="400" height="700" style="float:left; margin-right:10px;"><br>
+	<img src="Trantornos Mentais.png" alt="Imagem 1" width="400" height="600" style="float:left; margin-right:10px; margin-top: 20px; height: 650px;"><br>
+    <p class="title-trans">Trantornos Mentais:</p>
 	<p>Os transtornos mentais acometem, em algum momento da vida, ao menos 20% da população mundial. No Brasil, os cuidados com a saúde mental no sistema público sofreram uma reforma que começou há quase 20 anos e que procura evitar as internações em hospitais psiquiátricos, criando mecanismos de diagnóstico e tratamento mais amplos, com equipes multidisciplinares.</p>
     <p>Uma pesquisa da Universidade Federal de São Paulo (Unifesp) de 2006 realizada no Serviço de Atendimento Móvel de Urgência (Samu) de Marília, no interior de São Paulo, mostrou que 16% dos pacientes atendidos apresentaram transtornos mentais e do comportamentoUm em cada três casos de câncer pode ser curado se for descoberto logo no início. A doença é caracterizada em diferentes estágios: 0 a IV, sendo o último o mais grave e considerado incurável. Veja algumas informações de tipos de Trastornos Mentais na imagem ao lado esquerdo:</p><br>
 	
-	<p>Cancêr de Mama:</p>
-	<img src="infografico_cancer_de_mama-1.webp" alt="Imagem 2" width="300" height="450" style="float:right; margin-left:10px;"><br>
+	<p id="title-cancer">Cancêr de Mama:</p>
+	<img src="infografico_cancer_de_mama-1.webp" alt="Imagem 2" width="300" height="450" style="float:right; margin-left:10px; height: 380px; width: 300px"><br>
 	<p>O câncer de mama é o tipo que mais afeta mulheres em todo o mundo, tanto em países em desenvolvimento quanto em países desenvolvidos. A cada ano, são registrados cerca de 66 mil novos casos no Brasil, de acordo com estimativas do Instituto Nacional de Câncer (Inca). O agravo ocupa a primeira posição em mortalidade por câncer entre as mulheres no Brasil.
 	<p>O Ministério da Saúde recomenda a realização da mamografia como método de rastreamento para o câncer de mama, ou seja, exame de rotina, para mulheres sem sinais e sintomas na faixa etária de 50 a 69 anos, a cada dois anos</p>
-
+    </div>
+    
     <!-- Tag para delimitação de bloco -->
-    <section>
+    <section class="leg-im">
         <br><h4>Veja os gráficos a seguir relacionados aos temas:</h4><br>
 
             <!-- Tag label - Legendas descritivas para imagens -->
@@ -28,10 +59,7 @@
             <img src="grafico1_transtornos.png" alt="trantornos" width="500" height="300"  align="center"/><br>
 
             <br><br><label for="cancer">  Cancêr de Mama</label>
-            <img src="grafico2_cancer.webp" alt="cancer" height="200" align="center"/><br><br><br>
-
-            <label for="tpng"> TPNG</label>
-            <img src="/assets/images/tpng.jpg" alt="tpng" height="300" align="center" border="2"/><br>
+            <img src="grafico2_cancer.webp" alt="cancer" align="center" id="cancer"/><br><br><br>
     </section>
 </body>
 </html>
