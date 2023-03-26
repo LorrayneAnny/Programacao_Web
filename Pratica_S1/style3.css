@@ -1,3 +1,4 @@
+
 /*Estilização do fundo*/
 body {  
     font-size: 100%;
@@ -169,4 +170,8 @@ form {
 
 .grupo {
     text-align: center;
+}
+
+td{
+  color: white !important;
 }
