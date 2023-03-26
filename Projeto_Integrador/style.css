@@ -1,0 +1,20 @@
+    
+    /* Estilos Logo */
+    #logo{
+    height: 50px;
+    border-radius: 5%;
+    margin-right: 20px;
+    }
+
+    body {
+        font-size: 100%;
+        background: linear-gradient(68.15deg, #00000a 16.62%, #1a294f 85.61%);
+        color: white;
+    }
+
+    body{
+         color: white !important;
+         align-items: center;
+    }
+
+    
