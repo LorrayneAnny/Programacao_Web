@@ -1,3 +1,8 @@
+/*Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Lorrayne Annyelly
+DATA:26/03/2023*/
+
 const lista = document.getElementById('medicamentos-lista');
 const form = document.getElementById('medicamentos-form');
 const input = document.getElementById('medicamento-nome');
