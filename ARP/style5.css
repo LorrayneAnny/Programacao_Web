@@ -1,0 +1,82 @@
+#logo{
+    height: 50px;
+    border-radius: 5%;
+    margin-right: 20px;
+    }
+
+/* Estilos cor de fundo */
+body {
+        font-size: 100%;
+        background: linear-gradient(68.15deg, #00000a 16.62%, #1a294f 85.61%);
+    }
+
+/* Cor da fonte*/
+ body{
+    color: white !important;
+    align-items: center;
+ }
+
+ * {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .medicamentos {
+    width: 80%;
+    margin: auto;
+  }
+  
+  #medicamentos-lista {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #medicamentos-lista li {
+    padding: 10px;
+    background-color:  #0d6efd;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  
+  li:hover .remover {
+    display: inline-block;
+  }
+  
+  .remover {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: #33f0ed;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .remover:hover {
+    background-color: #0c0c88;
+    color: #fff;
+  }
+  
+  /* Estilos para telas com largura máxima de 768 pixels */
+  
+  @media (max-width: 768px) {
+    .medicamentos {
+      width: 90%;
+    }
+  
+    #medicamento-nome {
+      width: 70%;
+      margin-right: 10px;
+    }
+  
+    button[type="submit"] {
+      width: 25%;
+    }
+  }

@@ -1,9 +1,14 @@
-!DOCTYPE html>
+<!--Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Lorrayne Annyelly
+DATA:26/03/2023*-->
+
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>Cadastro de Pacientes e Agendamento de Consultas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style5.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
   </head>
   <body>
@@ -42,3 +47,19 @@
         </div>
       </nav>
     </header>
+    <body>
+        <h1>Lista de medicamentos</h1>
+        <div class="medicamentos">
+          <ul id="medicamentos-lista">
+            <li>Paracetamol <button class="remover">Remover</button></li>
+            <li>Ibuprofeno <button class="remover">Remover</button></li>
+            <li>Amoxicilina <button class="remover">Remover</button></li>
+          </ul>
+          <form id="medicamentos-form">
+            <input type="text" id="medicamento-nome" placeholder="Nome do medicamento">
+            <button type="submit">Adicionar</button>
+          </form>
+        </div>
+        <script src="index.js"></script>
+      </body>
+    </html>
