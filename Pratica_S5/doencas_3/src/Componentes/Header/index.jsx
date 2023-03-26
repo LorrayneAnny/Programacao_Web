@@ -23,13 +23,13 @@ export default function Header(){
                                 <Link to="/form"><a class="nav-link" href="index2.html">Formulário</a></Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index3.html">Tabelas</a>
+                                <Link to="/tabelas"><a class="nav-link" href="index3.html">Tabelas</a></Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index4.html">Imagens</a>
+                                <Link to="/imagens"><a class="nav-link" href="index4.html">Imagens</a></Link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index5.html">Menu</a>
+                                <Link to="/menu"><a class="nav-link" href="index5.html">Menu</a></Link>
                             </li>
                         </ul>
                         <form class="d-flex">
