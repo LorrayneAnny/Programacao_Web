@@ -1,0 +1,150 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Lorrayne Annyelly Pereira Cardoso
+DATA: 18/04/2023-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 1</title>
+</head>
+
+<!--Criando a estilização-->
+<style>
+
+    body {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    /*Adicionando estilização nas Caixas*/
+    .container {
+        border: 1px solid rgb(179, 167, 167);
+        padding: 5px;
+        width: 40vw;
+    }
+
+    .container-rigth {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        width: 40vw;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+    }
+
+
+    #enviar {
+        background-color: rgb(6, 188, 6);
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        border: none;
+    }
+
+    h2,
+    thead {
+        font-weight: 800;
+    }
+
+    table {
+        width: 100%;
+        border: none;
+    }
+
+    tr {
+        border: 1px solid black;
+    }
+
+    th{
+        text-align: left;
+        background-color: rgb(235, 228, 228);
+        padding: 5px 0px 5px 2px;
+    }
+
+    .loren{
+        margin-top: 20px;
+    }
+
+    .loren ul{
+        margin-left: 20px;
+        padding: 10px;
+    }
+</style>
+
+<!-- Definindo o conteudo da página -->
+<body>
+    <!--Criando caixa para agrupar formulário-->
+    <div class="container">
+    <!--Criando o formulário-->
+        <h2>Formulário </h2>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome...">
+
+            <label for="pais">País</label>
+            <select id="pais" name="pais">
+                <option value="Brasil">Brasil</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+
+            <input type="checkbox" name="ativo" id="ativo">
+            <label for="ativo">Ativo</label><br>
+
+            <input type="submit" value="Enviar" id="enviar">
+        </form>
+    </div>
+
+     <!--Criando caixa para agrupar Tabela-->
+    <div class="container-rigth">
+        <section class="container">
+            <h2>Tabela</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>João</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro</td>
+                        <td>22</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container loren">
+        <!--Adicionando texto-->
+            <p>
+                Veja a seguir algumas doenças classificadas como Transtornos Mentais:
+            </p>
+        <!--Definindo uma lista não ordenada-->
+            <ul>
+                <li>Ansiedade</li>
+                <li>Depressão</li>
+                <li>Esquizofrenia</li>
+            </ul>
+         
+            <!--Adicionando um link-->
+            <a href="#">Link</a>
+        </section>
+    </div>
+</body>
+
+</html>
