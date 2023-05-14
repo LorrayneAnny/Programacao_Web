@@ -1,5 +1,6 @@
 
 const { Doencas } = require('../models');
+const { Medicamento } = require('../models');
 
 class ControleDoencas{
     constructor() {
@@ -8,7 +9,7 @@ class ControleDoencas{
   
     async findAll (req, res) {
         try {
-            const doencas = await Doencas.findAll();
+            const doencas = await Doencas.findAll({include: {model: Medicamento, as: 'medicamento'}});
             res.status(200).json(doencas);
         } catch (error) {
             res.status(500).json({ error: error.message });
@@ -18,7 +19,7 @@ class ControleDoencas{
     async findById(req, res) {
         try {
             const id = req.params.id;
-            const doenca = await Doencas.findByPk(id);
+            const doenca = await Doencas.findByPk(id,{include: {model: Medicamento, as: 'medicamento'}});
 
             if (doenca) {
                 res.status(200).json(doenca);

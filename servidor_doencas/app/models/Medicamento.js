@@ -15,6 +15,13 @@ const Medicamento = sequelize.define('Medicamento', {
   fabricante: {
     type: DataTypes.STRING,
     allowNull: false,
+  },
+  id_doenca: {
+    type: DataTypes.INTEGER,
+    references: {
+      model: 'Doencas',
+      key: 'id'
+    }
   }
 });
 
