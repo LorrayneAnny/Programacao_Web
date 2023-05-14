@@ -13,6 +13,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/api/diseases', (req, res) => controleDoencas.findAll(req, res));
+
 app.post('/api/diseases', (req, res) => controleDoencas.create(req, res));
 app.get('/api/diseases/:id', (req, res) => controleDoencas.findById(req, res));
 app.put('/api/diseases/:id', (req, res) => controleDoencas.update(req, res));
