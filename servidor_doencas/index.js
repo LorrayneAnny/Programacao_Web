@@ -3,6 +3,8 @@ const ControleDoencas = require('./app/controllers/ControleDoencas');
 const controleDoencas = new ControleDoencas();
 const ControleMedicamento = require('./app/controllers/ControleMedicamento');
 const controleMedicamento = new ControleMedicamento();
+const ControleUsuarios = require('./app/controllers/ControleUsuarios');
+const controleUsuarios = new ControleUsuarios();
 const app = express();
 
 
@@ -24,6 +26,9 @@ app.post('/api/medicamentos', (req, res) => controleMedicamento.create(req, res)
 app.get('/api/medicamentos/:id', (req, res) => controleMedicamento.findById(req, res));
 app.put('/api/medicamentos/:id', (req, res) => controleMedicamento.update(req, res));
 app.delete('/api/medicamentos/:id', (req, res) => controleMedicamento.delete(req, res));
+
+app.post('/api/usuarios', (req, res) => controleUsuarios.criar(req, res));
+app.get('/api/usuarios', (req, res) => controleUsuarios.logar(req, res));
 
 app.listen(3030, function() {
   console.log('Servidor rodando na porta 3030');
