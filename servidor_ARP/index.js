@@ -9,6 +9,9 @@ const controlePaciente = new ControlePaciente();
 const ControleAgenda = require('./app/controllers/ControleAgenda');
 const controleAgenda = new ControleAgenda();
 
+const ControleUsuarios = require('./app/controllers/ControleUsuarios');
+const controleUsuarios = new ControleUsuarios();
+
 
 //Definindo a comunicação via arquivo Json
 app.use(express.json());
@@ -31,6 +34,9 @@ app.post('/agendas', (req, res) => controleAgenda.criarAgenda(req, res));
 app.put('/agendas/:id', (req, res) => controleAgenda.atualizar(req, res));
 app.delete('/agendas/:id', (req, res) => controleAgenda.deletar(req, res));
 
+// Criando rotas para usuários
+app.post('/api/usuarios', (req, res) => controleUsuarios.criar(req, res));
+app.get('/api/usuarios', (req, res) => controleUsuarios.logar(req, res));
 
 // Definindo a porta para a API
 app.listen(3030, (req, res) => {

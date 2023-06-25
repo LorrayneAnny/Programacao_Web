@@ -2,10 +2,13 @@ const sequelize = require('../../database');
 
 const Pacientes = require('./Pacientes');
 const Agendas = require('./Agendas');
+const Usuarios = require('./Usuarios');
+
 
 const modelos = {
     Pacientes,
-    Agendas
+    Agendas,
+    Usuarios
 };
 
 
